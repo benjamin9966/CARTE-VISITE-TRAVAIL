@@ -4,140 +4,148 @@
     <meta charset="UTF-8">
     <title>Carte de visite - Benjamin LAIK</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
     <style>
         body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
             margin: 0;
             padding: 0;
-            background: #f0f2f5;
-            font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            color: #1d1d1d;
+            background: #eef1f4;
+            color: #222;
+            display: flex;
+            justify-content: center;
+            padding: 30px;
         }
 
         .card {
-            max-width: 480px;
-            margin: 60px auto;
+            width: 100%;
+            max-width: 520px;
             background: #ffffff;
-            border-radius: 14px;
+            border-radius: 18px;
             overflow: hidden;
-            box-shadow: 0 10px 28px rgba(0,0,0,0.08);
-            border: 1px solid #e5e5e5;
+            box-shadow: 0 8px 26px rgba(0, 0, 0, 0.08);
+            display: flex;
+            flex-direction: column;
+            min-height: 650px;  /* Assure un espace pour aligner en bas */
         }
 
-        .header-bar {
-            background: linear-gradient(135deg, #0d1b33, #1f3558); /* bleu marine profond + dégradé */
-            padding: 26px 20px;
-            color: #ffffff;
+        /* HEADER */
+        .header {
+            background: linear-gradient(135deg, #0f1b3d, #1f2f57);
+            padding: 26px 24px;
+            color: white;
         }
-
         .name {
-            font-size: 1.5rem;
+            font-size: 1.55rem;
             font-weight: 700;
+            margin: 0 0 6px 0;
+        }
+        .role {
+            font-size: 1rem;
+            opacity: 0.9;
+            margin: 0 0 2px 0;
+        }
+        .company {
+            font-size: 0.95rem;
+            opacity: 0.8;
             margin: 0;
         }
 
-        .role {
-            margin: 5px 0 0;
-            font-size: 1rem;
-            opacity: 0.9;
+        /* CONTENT AREA – ALIGNÉ EN BAS */
+        .content {
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex: 1;
         }
 
-        .company {
-            margin: 2px 0 0;
-            font-size: 0.95rem;
-            opacity: 0.8;
-        }
-
-        .section {
-            padding: 22px 20px 8px;
+        .top-content {
+            margin-bottom: 20px;
         }
 
         .section-title {
-            font-size: 0.9rem;
+            font-size: 0.95rem;
             font-weight: 700;
-            color: #555;
-            margin-bottom: 8px;
+            color: #444;
+            margin: 0 0 12px;
             text-transform: uppercase;
-            letter-spacing: 0.06em;
+            letter-spacing: 0.07em;
         }
 
         .info-line {
+            margin: 6px 0 14px;
             font-size: 1rem;
-            margin: 5px 0 12px;
         }
 
-        .info-line a {
-            color: #0d1b33;
-            text-decoration: none;
+        .btn {
+            display: inline-block;
+            padding: 12px 18px;
+            border-radius: 10px;
             font-weight: 600;
+            font-size: 0.95rem;
+            text-decoration: none;
+            transition: 0.2s;
         }
 
         .btn-primary {
-            display: inline-block;
-            background: #0d1b33;
-            color: #ffffff;
-            padding: 12px 20px;
-            border-radius: 8px;
-            font-size: 0.98rem;
-            font-weight: 600;
-            text-decoration: none;
-            margin-top: 6px;
+            background: #1f2f57;
+            color: white;
         }
-
         .btn-primary:hover {
-            opacity: 0.9;
+            background: #162244;
         }
 
         .pitch {
-            padding: 16px 20px 26px;
-            font-size: 0.98rem;
-            color: #333;
+            font-size: 0.97rem;
             line-height: 1.55;
+            color: #333;
         }
 
-        .footer {
+        /* FOOTER */
+        .footer-note {
+            margin-top: 30px;
             text-align: center;
             font-size: 0.78rem;
-            color: #888;
-            padding: 12px 0 18px;
+            color: #999;
         }
     </style>
 </head>
-
 <body>
 
     <div class="card">
-
-        <div class="header-bar">
+        
+        <div class="header">
             <p class="name">Benjamin LAIK</p>
             <p class="role">Collaborateur comptable</p>
             <p class="company">Cabinet d’expertise comptable – NAGC FINANCEA</p>
         </div>
 
-        <div class="section">
-            <p class="section-title">Contact</p>
-            <p class="info-line">
-                Téléphone : <a href="tel:+33626364256">06 26 36 42 56</a>
-            </p>
+        <div class="content">
+            
+            <div class="top-content">
+                <p class="section-title">Contact</p>
+                <p class="info-line">
+                    Téléphone : <strong>06 26 36 42 56</strong>
+                </p>
 
-            <a class="btn-primary" href="https://financea.pro/#" target="_blank" rel="noopener">
-                Site FINANCEA
-            </a>
+                <a class="btn btn-primary" href="https://financea.pro/#" target="_blank" rel="noopener">
+                    Site FINANCEA
+                </a>
+            </div>
+
+            <div class="pitch">
+                Boostez votre activité dès maintenant : notre cabinet transforme vos chiffres
+                en décisions claires et rentables. Découvrez comment optimiser votre fiscalité,
+                sécuriser votre gestion et gagner du temps sur l’essentiel. Prenez une longueur d’avance.
+            </div>
+
+            <div class="footer-note">
+                Carte de visite numérique – Benjamin LAIK
+            </div>
+
         </div>
-
-        <div class="pitch">
-            Boostez votre activité dès maintenant : notre cabinet transforme vos chiffres
-            en décisions claires et rentables. Découvrez comment optimiser votre fiscalité,
-            sécuriser votre gestion et gagner du temps sur l’essentiel.
-            Prenez une longueur d’avance.
-        </div>
-
-        <div class="footer">
-            Carte de visite numérique – Benjamin LAIK
-        </div>
-
     </div>
 
 </body>
 </html>
-
