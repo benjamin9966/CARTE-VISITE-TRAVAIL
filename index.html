@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Carte de Visite - Benjamin LAIK</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f5f5f5;
+            color: #222;
+        }
+        .card {
+            max-width: 480px;
+            margin: 40px auto;
+            background: #ffffff;
+            padding: 24px 20px 28px;
+            border-radius: 14px;
+            box-shadow: 0 8px 22px rgba(0,0,0,0.08);
+        }
+        .header {
+            margin-bottom: 18px;
+        }
+        .name {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin: 0 0 4px 0;
+        }
+        .role {
+            font-size: 0.98rem;
+            color: #555;
+            margin: 0 0 2px 0;
+        }
+        .company {
+            font-size: 0.95rem;
+            color: #777;
+            margin: 0;
+        }
+        .section-title {
+            font-size: 0.95rem;
+            font-weight: 600;
+            margin: 18px 0 6px;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: #666;
+        }
+        .info-line {
+            margin: 4px 0;
+            font-size: 0.96rem;
+        }
+        .info-line a {
+            text-decoration: none;
+        }
+        .phone-link {
+            font-weight: 600;
+        }
+        .btn {
+            display: block;
+            text-align: center;
+            margin: 16px 0 8px;
+            padding: 11px 14px;
+            border-radius: 999px;
+            font-size: 0.98rem;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        .btn-primary {
+            background: #1f4b8f;
+            color: #ffffff;
+        }
+        .btn-primary:active {
+            transform: translateY(1px);
+        }
+        .pitch {
+            margin-top: 14px;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            color: #333;
+        }
+        .footer-note {
+            margin-top: 18px;
+            font-size: 0.78rem;
+            color: #999;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="header">
+            <p class="name">Benjamin LAIK</p>
+            <p class="role">Collaborateur comptable</p>
+            <p class="company">Cabinet d’expertise comptable — NAGC FINANCEA</p>
+        </div>
+
+        <div class="contact">
+            <p class="section-title">Contact</p>
+            <p class="info-line">
+                Téléphone :
+                <a class="phone-link" href="tel:+33626364256">06 26 36 42 56</a>
+            </p>
+            <a class="btn btn-primary" href="https://financea.pro/#" target="_blank" rel="noopener">
+                Accéder au site FINANCEA
+            </a>
+        </div>
+
+        <div class="pitch">
+            <p>
+                Boostez votre activité dès maintenant : notre cabinet transforme vos chiffres
+                en décisions claires et rentables. Découvrez comment optimiser votre fiscalité,
+                sécuriser votre gestion et gagner du temps sur l’essentiel. Prenez une longueur d’avance.
+            </p>
+        </div>
+
+        <div class="footer-note">
+            Scannez ce QR depuis votre smartphone pour revenir sur cette carte.
+        </div>
+    </div>
+</body>
+</html>
